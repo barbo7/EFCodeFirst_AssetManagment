@@ -82,6 +82,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\202312041802543_InitialCreate.cs" />
+    <Compile Include="Migrations\202312041802543_InitialCreate.designer.cs">
+      <DependentUpon>202312041802543_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312141423137_envanterupdateMigrate.cs" />
+    <Compile Include="Migrations\202312141423137_envanterupdateMigrate.designer.cs">
+      <DependentUpon>202312141423137_envanterupdateMigrate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -95,6 +104,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\202312041802543_InitialCreate.resx">
+      <DependentUpon>202312041802543_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312141423137_envanterupdateMigrate.resx">
+      <DependentUpon>202312141423137_envanterupdateMigrate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -115,8 +130,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entities\Maps\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

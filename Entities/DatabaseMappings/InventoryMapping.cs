@@ -17,6 +17,7 @@ namespace EFDatabaseFirst.Entities.DatabaseMappings
             Property(i => i.ProductName).IsRequired().HasMaxLength(100).HasColumnName("ProductName");
             Property(i => i.ProductAmount).IsRequired().HasColumnName("ProductAmount");
             Property(i => i.RecorderLevel).IsRequired().HasColumnName("RecorderLevel");
+            Property(i => i.ProductPrice).IsRequired().HasColumnName("ProductPrice").HasPrecision(18, 2);
         }
     }
 }
