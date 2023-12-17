@@ -63,11 +63,16 @@
     <Compile Include="Entities\DatabaseMappings\EmployeeMapping.cs" />
     <Compile Include="Entities\DatabaseMappings\InventoryMapping.cs" />
     <Compile Include="Entities\DatabaseMappings\MaintenanceRecordMapping.cs" />
+    <Compile Include="Entities\DatabaseMappings\RequestMapping.cs" />
     <Compile Include="Entities\DatabaseMappings\UsageRegistrationMapping.cs" />
+    <Compile Include="Entities\DatabaseMappings\WorkflowMapping.cs" />
+    <Compile Include="Entities\DatabaseMappings\WorkflowStatusMapping.cs" />
     <Compile Include="Entities\Employee.cs" />
     <Compile Include="Entities\Inventory.cs" />
     <Compile Include="Entities\MaintenanceRecord.cs" />
+    <Compile Include="Entities\Request.cs" />
     <Compile Include="Entities\UsageRegistration.cs" />
+    <Compile Include="WorkflowStatus.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -76,6 +81,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Entities\Workflow.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -114,6 +120,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include=".editorconfig" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
